@@ -1,6 +1,7 @@
 package com.dryseed.javademo.reflection.demo;
 
-import com.dryseed.dryseedapp.test.reflection.demo.bean.User;
+
+import com.dryseed.javademo.reflection.demo.bean.User;
 
 import java.lang.reflect.Method;
 

@@ -2,6 +2,9 @@ package com.dryseed.javademo.file;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.io.IOException;
+
+import static com.dryseed.javademo.file.Demo3.test3;
 
 /**
  * 5、操作目录
@@ -19,6 +22,22 @@ public class Demo4 {
      * @param args
      */
     public static void main(String[] args) {
+        //test1();
+        //test2();
+        test3();
+    }
+
+    public static void test3() {
+        String path = "./javaDemo/src/main/java/com/dryseed/javademo/file/test.text";
+        File src = new File(path);
+        try {
+            src.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void test2() {
         String path = "E:/xp/test/";
         File src = new File(path); //文件夹
         if (src.isDirectory()) { //存在并且为目录
@@ -49,7 +68,6 @@ public class Demo4 {
             for (File temp : subFiles) {
                 System.out.println(temp.getAbsolutePath());
             }
-
 
         }
     }

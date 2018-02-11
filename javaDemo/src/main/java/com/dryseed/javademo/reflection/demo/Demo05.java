@@ -1,7 +1,8 @@
 package com.dryseed.javademo.reflection.demo;
 
-import com.dryseed.dryseedapp.test.reflection.demo.annotation.SxtField;
-import com.dryseed.dryseedapp.test.reflection.demo.annotation.SxtTable;
+
+import com.dryseed.javademo.reflection.demo.annotation.SxtField;
+import com.dryseed.javademo.reflection.demo.annotation.SxtTable;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;

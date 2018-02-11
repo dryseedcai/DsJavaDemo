@@ -1,7 +1,5 @@
 package com.dryseed.javademo.LeetCode.swordToOffer;
 
-import com.dryseed.dryseedapp.listui.demo.ListUIPresenter;
-
 /**
  * Created by caiminming on 2017/7/17.
  */
