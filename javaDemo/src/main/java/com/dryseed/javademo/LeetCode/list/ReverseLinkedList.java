@@ -2,10 +2,9 @@ package com.dryseed.javademo.LeetCode.list;
 
 /**
  * Created by caiminming on 2017/10/19.
- *
+ * <p>
  * 单链表反转
  * http://blog.csdn.net/guyuealian/article/details/51119499
- *
  */
 
 public class ReverseLinkedList {
@@ -32,15 +31,14 @@ public class ReverseLinkedList {
         print(head2);
     }
 
-    private static void print(Node head){
+    private static void print(Node head) {
         StringBuffer sb = new StringBuffer();
-        while (head != null){
+        while (head != null) {
             sb.append(head.value + " ");
             head = head.next;
         }
         System.out.println(sb.toString());
     }
-
 
     private static Node reverseLinkedList(Node head) {
         if (null == head) return head;
