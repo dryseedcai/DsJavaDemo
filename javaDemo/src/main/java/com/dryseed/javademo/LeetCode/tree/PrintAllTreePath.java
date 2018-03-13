@@ -18,12 +18,12 @@ public class PrintAllTreePath {
          *22   4 28 32
          */
         int[] tree = {0, 13, 65, 5, 97, 25, 0, 37, 22, 0, 4, 28, 0, 0, 32, 0};
-        BinaryTreeTraversal.TreeNode node = BinaryTreeTraversal.makeBinaryTreeByArray(tree, 1);
+        TreeNode node = BinaryTreeTraversal.makeBinaryTreeByArray(tree, 1);
         //System.out.println(node.left.right.left.value);
         PrintAllTreePath.print(node, new int[tree.length - 1], 0);
     }
 
-    private static void print(BinaryTreeTraversal.TreeNode node, int[] list, int length) {
+    private static void print(TreeNode node, int[] list, int length) {
         list[length++] = node.value;
         if (node.left == null && node.right == null) {
             printPath(list);

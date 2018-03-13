@@ -21,11 +21,11 @@ public class FindTreePath {
          *22   4 28 32
          */
         int[] tree = {0, 13, 65, 5, 97, 25, 0, 37, 22, 0, 4, 28, 0, 0, 32, 0};
-        BinaryTreeTraversal.TreeNode node = BinaryTreeTraversal.makeBinaryTreeByArray(tree, 1);
+        TreeNode node = BinaryTreeTraversal.makeBinaryTreeByArray(tree, 1);
         FindTreePath.find(new Stack(), node, 107, 0);
     }
 
-    private static void find(Stack<BinaryTreeTraversal.TreeNode> stack, BinaryTreeTraversal.TreeNode node, int expectedSum, int currentSum) {
+    private static void find(Stack<TreeNode> stack, TreeNode node, int expectedSum, int currentSum) {
         if (null == node) return;
         currentSum += node.value;
         stack.push(node);
@@ -34,7 +34,7 @@ public class FindTreePath {
             //叶子节点
             if (currentSum == expectedSum) {
                 StringBuffer sb = new StringBuffer();
-                for (BinaryTreeTraversal.TreeNode i : stack) {
+                for (TreeNode i : stack) {
                     sb.append(i.value + " ");
                 }
                 System.out.println(sb.toString());

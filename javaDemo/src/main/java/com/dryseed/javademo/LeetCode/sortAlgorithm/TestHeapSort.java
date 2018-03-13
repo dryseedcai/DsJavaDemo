@@ -62,7 +62,7 @@ public class TestHeapSort {
 
         for (int i = a.length - 1; i >= 1; i--) {
             swap(a, 0, i);
-            maxHeap(a, i, 0);
+            maxHeap(a, i - 1, 0);
         }
     }
 
@@ -94,5 +94,4 @@ public class TestHeapSort {
         data[a] = data[b];
         data[b] = temp;
     }
-
 }

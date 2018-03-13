@@ -1,7 +1,6 @@
 package com.dryseed.javademo.LeetCode.tree;
 
 import java.util.ArrayDeque;
-import java.util.LinkedList;
 
 /**
  * Created by User on 2017/10/18.
@@ -95,15 +94,5 @@ public class BinaryTreeTraversal {
             }
         }
         return null;
-    }
-
-    static class TreeNode {
-        int value;
-        TreeNode left;
-        TreeNode right;
-
-        public TreeNode(int value) {
-            this.value = value;
-        }
     }
 }
