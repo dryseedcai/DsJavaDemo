@@ -50,7 +50,7 @@ public class TestQuickSort {
     }
 
     public static void sort(int[] args, int start, int end) {
-        if (end - start > 0) {
+        if (start < end) {
             int mid = dividerAndChange(args, start, end);
             sort(args, start, mid - 1);
             sort(args, mid + 1, end);
@@ -79,6 +79,5 @@ public class TestQuickSort {
         args[start] = piovt;
         return start;
     }
-
 
 }

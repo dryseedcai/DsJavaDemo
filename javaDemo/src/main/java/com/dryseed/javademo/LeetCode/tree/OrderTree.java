@@ -27,7 +27,7 @@ public class OrderTree {
         System.out.println();
 
         //后序遍历
-        postOrderTree(node); //22 97 65 4 25 28 5 32 37 13
+        postOrderTree(node); //22 97 4 28 25 65 32 37 5 13
         System.out.println();
     }
 
