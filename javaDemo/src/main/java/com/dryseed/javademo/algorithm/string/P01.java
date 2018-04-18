@@ -1,4 +1,4 @@
-package com.dryseed.javademo.LeetCode.swordToOffer;
+package com.dryseed.javademo.algorithm.string;
 
 /**
  * Created by caiminming on 2017/7/14.
@@ -20,7 +20,7 @@ package com.dryseed.javademo.LeetCode.swordToOffer;
  * 所有字符都只移动一次，时间复杂度为O(n)
  */
 
-public class P04 {
+public class P01 {
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer(" e  re  a p ");
 

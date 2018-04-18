@@ -1,21 +1,11 @@
-package com.dryseed.javademo.LeetCode.swordToOffer;
+package com.dryseed.javademo.algorithm.link;
+
+
+import com.dryseed.javademo.algorithm.entity.ListNode;
 
 import java.util.Stack;
 
-/**
- * Created by User on 2017/7/15.
- * <p/>
- * 题目：输入个链表的头结点，从尾到头反过来打印出每个结点的值。
- */
-public class P05 {
-    /**
-     * 结点对象
-     */
-    public static class ListNode {
-        int val; // 结点的值
-        ListNode nxt; // 下一个结点
-    }
-
+public class P01 {
     /**
      * 输入个链表的头结点，从尾到头反过来打印出每个结点的值
      * 使用栈的方式进行
@@ -26,12 +16,12 @@ public class P05 {
         Stack<ListNode> stack = new Stack<>();
         while (root != null) {
             stack.push(root);
-            root = root.nxt;
+            root = root.next;
         }
         ListNode tmp;
         while (!stack.isEmpty()) {
             tmp = stack.pop();
-            System.out.print(tmp.val + " ");
+            System.out.print(tmp.value + " ");
         }
     }
 
@@ -43,22 +33,22 @@ public class P05 {
      */
     public static void printListInverselyUsingRecursion(ListNode root) {
         if (root != null) {
-            printListInverselyUsingRecursion(root.nxt);
-            System.out.print(root.val + " ");
+            printListInverselyUsingRecursion(root.next);
+            System.out.print(root.value + " ");
         }
     }
 
     public static void main(String[] args) {
         ListNode root = new ListNode();
-        root.val = 1;
-        root.nxt = new ListNode();
-        root.nxt.val = 2;
-        root.nxt.nxt = new ListNode();
-        root.nxt.nxt.val = 3;
-        root.nxt.nxt.nxt = new ListNode();
-        root.nxt.nxt.nxt.val = 4;
-        root.nxt.nxt.nxt.nxt = new ListNode();
-        root.nxt.nxt.nxt.nxt.val = 5;
+        root.value = 1;
+        root.next = new ListNode();
+        root.next.value = 2;
+        root.next.next = new ListNode();
+        root.next.next.value = 3;
+        root.next.next.next = new ListNode();
+        root.next.next.next.value = 4;
+        root.next.next.next.next = new ListNode();
+        root.next.next.next.next.value = 5;
 
         printListInverselyUsingIteration(root);
         System.out.println();

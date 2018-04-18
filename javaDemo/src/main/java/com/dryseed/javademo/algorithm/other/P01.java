@@ -1,9 +1,9 @@
-package com.dryseed.javademo.LeetCode.swordToOffer;
+package com.dryseed.javademo.algorithm.other;
 
 /**
  * Created by User on 2017/7/15.
  */
-public class P09 {
+public class P01 {
     /**
      * 写一个函数，输入n，求斐波那契（Fibonacci) 数列的第n项
      *

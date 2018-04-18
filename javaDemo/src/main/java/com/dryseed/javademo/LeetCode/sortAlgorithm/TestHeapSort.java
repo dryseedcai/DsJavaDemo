@@ -78,7 +78,7 @@ public class TestHeapSort {
         }
         if (largest != index) {
             swap(a, index, largest);
-            maxHeap(a, size, largest); //largest现在对应的是那个较小的值
+            maxHeap(a, size, largest);
         }
     }
 

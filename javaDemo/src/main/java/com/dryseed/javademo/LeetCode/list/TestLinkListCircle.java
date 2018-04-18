@@ -1,5 +1,10 @@
 package com.dryseed.javademo.LeetCode.list;
 
+import com.dryseed.javademo.LeetCode.tree.TreeNode;
+
+import java.util.HashMap;
+import java.util.HashSet;
+
 /**
  * Created by caiminming on 2017/10/19.
  * <p>
@@ -21,6 +26,7 @@ public class TestLinkListCircle {
         System.out.println(headNode.next.next.next.next.value);
         System.out.println("searchEntranceNode : " + TestLinkListCircle.searchEntranceNode(headNode).value);
         System.out.println("circleLength : " + TestLinkListCircle.circleLength(headNode));
+
     }
 
     // 0 1 2 3 1

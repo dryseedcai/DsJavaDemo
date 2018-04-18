@@ -1,10 +1,6 @@
-package com.dryseed.javademo.LeetCode.swordToOffer;
+package com.dryseed.javademo.algorithm.array;
 
-/**
- * Created by caiminming on 2017/7/14.
- */
-
-public class P03 {
+public class P01 {
     /**
      * 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。
      * 请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
@@ -52,13 +48,12 @@ public class P03 {
                 {4, 7, 10, 13},
                 {6, 8, 11, 15}
         };
-        System.out.println(find(matrix, 7));    // 要查找的数在数组中
-        System.out.println(find(matrix, 5));    // 要查找的数不在数组中
-        System.out.println(find(matrix, 1));    // 要查找的数是数组中最小的数字
-        System.out.println(find(matrix, 15));   // 要查找的数是数组中最大的数字
-        System.out.println(find(matrix, 0));    // 要查找的数比数组中最小的数字还小
-        System.out.println(find(matrix, 16));   // 要查找的数比数组中最大的数字还大
-        System.out.println(find(null, 16));     // 健壮性测试，输入空指针
+        System.out.println(find(matrix, 7));    // 要查找的数在数组中 true
+        System.out.println(find(matrix, 5));    // 要查找的数不在数组中 false
+        System.out.println(find(matrix, 1));    // 要查找的数是数组中最小的数字 true
+        System.out.println(find(matrix, 15));   // 要查找的数是数组中最大的数字 true
+        System.out.println(find(matrix, 0));    // 要查找的数比数组中最小的数字还小 false
+        System.out.println(find(matrix, 16));   // 要查找的数比数组中最大的数字还大 false
+        System.out.println(find(null, 16));     // 健壮性测试，输入空指针 false
     }
-
 }

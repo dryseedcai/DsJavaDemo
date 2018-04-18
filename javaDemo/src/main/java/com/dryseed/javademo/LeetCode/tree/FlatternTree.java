@@ -28,15 +28,19 @@ public class FlatternTree {
     private static TreeNode flatternTree(TreeNode node) {
         if (node == null) return null;
 
+        //用递归的思想，把左右先铺平
         TreeNode left = flatternTree(node.left);
         TreeNode right = flatternTree(node.right);
 
+        //把左指针和右指针先指向空
         node.left = null;
         node.right = null;
 
         if (left == null) {
+            //假如左子树生成的链表为空，那么忽略它，把右子树生成的链表指向根节点的右指针
             node.right = right;
         } else {
+            //如果左子树生成链表不为空，那么用while循环获取最后一个节点，并且它的右指针要指向右子树生成的链表的头节点
             TreeNode lastNode = left;
             while (lastNode != null && lastNode.right != null) {
                 lastNode = lastNode.right;
