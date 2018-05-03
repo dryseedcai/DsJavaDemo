@@ -1,5 +1,8 @@
 package com.dryseed.javademo.LeetCode.tree;
 
+import com.dryseed.javademo.algorithm.entity.TreeNode;
+import com.dryseed.javademo.algorithm.tree.BinaryTreeTraversal;
+
 public class TestTreeDepth {
     public static void main(String[] args) {
         /**

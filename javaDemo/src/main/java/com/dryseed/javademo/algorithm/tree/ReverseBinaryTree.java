@@ -1,4 +1,7 @@
-package com.dryseed.javademo.LeetCode.tree;
+package com.dryseed.javademo.algorithm.tree;
+
+import com.dryseed.javademo.algorithm.entity.TreeNode;
+import com.dryseed.javademo.algorithm.tree.BinaryTreeTraversal;
 
 /**
  * 反转二叉树

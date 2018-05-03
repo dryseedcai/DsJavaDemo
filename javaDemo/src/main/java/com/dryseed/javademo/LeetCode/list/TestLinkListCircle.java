@@ -1,10 +1,5 @@
 package com.dryseed.javademo.LeetCode.list;
 
-import com.dryseed.javademo.LeetCode.tree.TreeNode;
-
-import java.util.HashMap;
-import java.util.HashSet;
-
 /**
  * Created by caiminming on 2017/10/19.
  * <p>

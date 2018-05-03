@@ -1,4 +1,8 @@
-package com.dryseed.javademo.LeetCode.tree;
+package com.dryseed.javademo.algorithm.tree;
+
+import com.dryseed.javademo.algorithm.entity.TreeNode;
+
+import sun.reflect.generics.tree.Tree;
 
 /**
  * 判断该树是不是平衡二叉树
@@ -22,7 +26,7 @@ public class TestIsAvlTree {
         TreeNode node = BinaryTreeTraversal.makeBinaryTreeByArray(tree, 1);
 
         boolean isBalanced = isBalanced(node, new Depth(0));
-        System.out.println("isBalanced : " + isBalanced);
+        System.out.println("isBalanced : " + isBalanced); //false
     }
 
     private static boolean isBalanced(TreeNode node, Depth depth) {

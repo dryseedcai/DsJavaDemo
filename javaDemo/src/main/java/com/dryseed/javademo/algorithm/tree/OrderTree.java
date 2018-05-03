@@ -1,4 +1,6 @@
-package com.dryseed.javademo.LeetCode.tree;
+package com.dryseed.javademo.algorithm.tree;
+
+import com.dryseed.javademo.algorithm.entity.TreeNode;
 
 /**
  * 先序、中序、后序遍历

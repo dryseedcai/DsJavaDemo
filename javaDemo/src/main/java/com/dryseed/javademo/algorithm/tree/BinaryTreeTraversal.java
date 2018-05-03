@@ -1,10 +1,12 @@
-package com.dryseed.javademo.LeetCode.tree;
+package com.dryseed.javademo.algorithm.tree;
+
+import com.dryseed.javademo.algorithm.entity.TreeNode;
 
 import java.util.ArrayDeque;
 
 /**
  * Created by User on 2017/10/18.
- *
+ * <p>
  * 二叉树 广度、深度优先遍历
  */
 public class BinaryTreeTraversal {
@@ -37,7 +39,7 @@ public class BinaryTreeTraversal {
         }
         ArrayDeque<TreeNode> stack = new ArrayDeque<TreeNode>();
         stack.push(root);
-        while (stack.isEmpty() == false) {
+        while (!stack.isEmpty()) {
             TreeNode node = stack.pop();
             System.out.print(node.value + "  ");
             //注意：先推右子节点，先进后出
@@ -63,7 +65,7 @@ public class BinaryTreeTraversal {
         }
         ArrayDeque<TreeNode> queue = new ArrayDeque<TreeNode>();
         queue.add(root);
-        while (queue.isEmpty() == false) {
+        while (!queue.isEmpty()) {
             TreeNode node = queue.remove();
             System.out.print(node.value + "  ");
             if (node.left != null) {
