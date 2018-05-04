@@ -6,6 +6,23 @@ import com.dryseed.javademo.algorithm.entity.ListNode;
 import java.util.Stack;
 
 public class P01 {
+    public static void main(String[] args) {
+        ListNode root = new ListNode();
+        root.value = 1;
+        root.next = new ListNode();
+        root.next.value = 2;
+        root.next.next = new ListNode();
+        root.next.next.value = 3;
+        root.next.next.next = new ListNode();
+        root.next.next.next.value = 4;
+        root.next.next.next.next = new ListNode();
+        root.next.next.next.next.value = 5;
+
+        printListInverselyUsingIteration(root);
+        System.out.println();
+        printListInverselyUsingRecursion(root);
+    }
+
     /**
      * 输入个链表的头结点，从尾到头反过来打印出每个结点的值
      * 使用栈的方式进行
@@ -38,20 +55,4 @@ public class P01 {
         }
     }
 
-    public static void main(String[] args) {
-        ListNode root = new ListNode();
-        root.value = 1;
-        root.next = new ListNode();
-        root.next.value = 2;
-        root.next.next = new ListNode();
-        root.next.next.value = 3;
-        root.next.next.next = new ListNode();
-        root.next.next.next.value = 4;
-        root.next.next.next.next = new ListNode();
-        root.next.next.next.next.value = 5;
-
-        printListInverselyUsingIteration(root);
-        System.out.println();
-        printListInverselyUsingRecursion(root);
-    }
 }

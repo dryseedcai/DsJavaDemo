@@ -1,4 +1,4 @@
-package com.dryseed.javademo.LeetCode.list;
+package com.dryseed.javademo.algorithm.link;
 
 /**
  * Created by caiminming on 2017/10/19.

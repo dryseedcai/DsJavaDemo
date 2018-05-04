@@ -1,4 +1,4 @@
-package com.dryseed.javademo.LeetCode.list;
+package com.dryseed.javademo.algorithm.link;
 
 /**
  * Created by caiminming on 2017/10/19.
@@ -7,20 +7,20 @@ package com.dryseed.javademo.LeetCode.list;
  * 另外可参考：http://blog.jobbole.com/106227/
  */
 
-public class TestLinkListCircle {
+public class LinkListCircle {
     static class Node {
         Node next;
         int value;
     }
 
     public static void main(String[] args) {
-        TestLinkListCircle linkListCircle = new TestLinkListCircle();
+        LinkListCircle linkListCircle = new LinkListCircle();
         Node headNode = new Node();
         headNode.value = 0;
         linkListCircle.createLinkList(headNode);
         System.out.println(headNode.next.next.next.next.value);
-        System.out.println("searchEntranceNode : " + TestLinkListCircle.searchEntranceNode(headNode).value);
-        System.out.println("circleLength : " + TestLinkListCircle.circleLength(headNode));
+        System.out.println("searchEntranceNode : " + LinkListCircle.searchEntranceNode(headNode).value);
+        System.out.println("circleLength : " + LinkListCircle.circleLength(headNode));
 
     }
 
@@ -42,8 +42,7 @@ public class TestLinkListCircle {
         if (headNode.next == null) return null;//单链表中只有头结点，而且头结点的next为空，单链表没有环
         Node slow = headNode.next;//p表示从头结点开始每次往后走一步的指针
         Node fast = headNode.next.next;//q表示从头结点开始每次往后走两步的指针
-        while (fast != null) //q不为空执行while循环
-        {
+        while (fast != null) { //q不为空执行while循环
             if (slow == fast) break;//p与q相等，单链表有环
             slow = slow.next;
             fast = fast.next.next;

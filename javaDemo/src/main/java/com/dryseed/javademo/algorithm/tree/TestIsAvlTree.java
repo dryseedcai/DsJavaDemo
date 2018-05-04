@@ -49,13 +49,12 @@ public class TestIsAvlTree {
         return false;
     }
 
+    static class Depth {
+        int depth = 0;
 
-}
-
-class Depth {
-    int depth = 0;
-
-    public Depth(int depth) {
-        this.depth = depth;
+        public Depth(int depth) {
+            this.depth = depth;
+        }
     }
 }
+

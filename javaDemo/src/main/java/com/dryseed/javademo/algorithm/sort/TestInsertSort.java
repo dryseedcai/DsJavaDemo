@@ -1,4 +1,4 @@
-package com.dryseed.javademo.LeetCode.sortAlgorithm;
+package com.dryseed.javademo.algorithm.sort;
 
 /**
  * Created by caiminming on 2017/1/3.

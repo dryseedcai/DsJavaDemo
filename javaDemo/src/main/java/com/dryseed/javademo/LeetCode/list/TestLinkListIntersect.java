@@ -1,5 +1,7 @@
 package com.dryseed.javademo.LeetCode.list;
 
+import com.dryseed.javademo.algorithm.entity.Node;
+
 /**
  * 判断两个链表是否相交
  */

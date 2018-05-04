@@ -1,4 +1,4 @@
-package com.dryseed.javademo.LeetCode.list;
+package com.dryseed.javademo.algorithm.entity;
 
 public class Node {
     public Node next;
